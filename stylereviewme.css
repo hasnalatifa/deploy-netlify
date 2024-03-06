@@ -1,0 +1,272 @@
+/* ReviewMe CSS */
+.logo {
+   font-family: 'Protest Riot', sans-serif;
+   font-size: 50px;
+   color: #E91E63;
+   text-decoration: none;
+   text-shadow: 2px 2px 4px #000000;
+   animation: zoomInOutLogo 5s ease-in-out infinite;
+   margin: 15px;
+}
+
+@keyframes zoomInOutLogo {
+   0%, 100% {
+       transform: scale(1); /* Ukuran awal */
+   }
+   50% {
+       transform: scale(1.2); /* Memperbesar logo sebesar 20% */
+   }
+}
+
+.hero {
+   background-image: url('https://t4.ftcdn.net/jpg/02/58/44/11/360_F_258441195_rBrqKBX5glZKIEeE6ogvO9lBoQXlI4Qz.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 30vh;
+   background-color: #FAFAFA;
+   padding: 30px 0;
+   text-align: center;
+}
+ 
+.hero h1 {
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+
+body {
+   font-family: 'Poppins', sans-serif;
+   color: #333;
+   background-color: #fff;
+   margin: 0;
+   padding: 0;width: 100%;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 15px;
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+   position: relative;
+   overflow: auto;
+   overflow-x: auto;
+}
+
+.navbar {
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   padding: 20px 0;
+}
+
+.navbar .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+}
+
+.nav-links li {
+   margin-left: 20px;
+   list-style-type: disc;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: #a04664; /* Pink color */
+   transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+   color: #481f2d;
+}
+
+.latest-reviews .review-items {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Membagi container menjadi 3 kolom */
+   grid-gap: 20px; /* Jarak antara item grid */  
+}
+
+.latest-reviews .review-item {
+   grid-column-end: span 1; /* Setiap item akan memenuhi 1 kolom */
+   grid-row-end: span 1; /* Setiap item akan memenuhi 1 baris */
+   margin-bottom: 20px; /* Menambahkan jarak bawah untuk setiap item */
+   padding: 20px; /* Menambahkan padding */
+   border: none; /* Menghilangkan border */
+   transition: transform 0.3s ease-in-out; /* Menambahkan transisi untuk efek hover */
+}
+
+.latest-reviews .review-item:first-child {
+   grid-column: span 2; /* Item pertama memenuhi 2 kolom */
+   grid-row: span 2; /* Item pertama memenuhi 2 baris */
+}
+
+.review-items {
+       display: grid;
+       justify-content: center;
+       grid-template-columns: repeat(auto-fit, minmax(230px, 5fr));
+       row-gap: 10px;
+       column-gap: 2px;
+}
+
+.review-item {
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 1px solid #c765b0 !important;
+   border-radius: 8px;
+   transition: transform 0.3s ease-in-out; /* Menambahkan transisi untuk efek membesar */
+   width: calc(80% - 60px); /* Menyesuaikan lebar box */
+   flex: 1 1 200px;
+   margin: 5px;
+}
+
+.review-item:hover {
+   transform: scale(1.10); /* Membuat item 5% lebih besar */
+}
+
+.scroll-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: #fff;
+   border: none;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.left-btn {
+   left: 0;
+}
+
+.right-btn {
+   right: 0;
+}
+
+
+.review-item img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px; /* Rounded corners for images */
+}
+
+.review-item h3 {
+   color: #333;
+   margin-left: 0;
+   margin-right: 0;
+   font-size: 14px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.review-item p {
+   color: #333;
+   margin-left: 0;
+   margin-right: 0;
+   font-size: 12px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.review-item a {
+   display: inline-block;
+   background-color: #E91E63;
+   color: #fff;
+   padding: 8px 15px;
+   border-radius: 5px;
+   text-decoration: none;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 11px;
+}
+
+.request-review {
+   background-color: #FAFAFA;
+   padding: 50px 0;
+   text-align: center;
+   background-color: #eb9cb5;
+}
+
+.request-review h2 {
+   margin-bottom: 20px;
+}
+
+.request-review form {
+   max-width: 500px;
+   margin: auto;
+}
+
+.request-review input, .request-review button {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.request-review button {
+   background-color: #E91E63;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.request-review input:focus, .request-review button:focus {
+   outline: none;
+   border-color: #E91E63;
+}
+
+.form-group {
+   margin-bottom: 15px; /* Memberikan jarak antar form group */
+}
+
+.product-category {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 15px; /* Memberikan jarak sebelum input produk */
+}
+
+.product-category > div {
+   display: flex;
+   align-items: center;
+}
+
+footer {
+   background-color: #FAFAFA;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: 40px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+   .latest-reviews .review-items {
+       grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar yang lebih kecil */
+   }
+   
+   .latest-reviews .review-item:first-child {
+       grid-column: span 2; /* Item pertama tetap memenuhi 2 kolom */
+       grid-row: span 1; /* Mengubah agar item pertama hanya memenuhi 1 baris */
+   }
+}
+
+@media (max-width: 768px) {
+   .latest-reviews .review-items {
+       grid-template-columns: 1fr; /* 1 kolom pada layar yang lebih kecil */
+   }
+
+   .latest-reviews .review-item:first-child {
+       grid-column: span 1; /* Item pertama memenuhi 1 kolom */
+   }
+}

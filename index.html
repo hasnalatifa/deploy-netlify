@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReviewMe - Beranda</title>
+    <link rel="stylesheet" href="stylereviewme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">ReviewMe</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="reviews.html">Review Produk</a></li>
+                    <li><a href="tips.html">Tips & Trik</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Selamat Datang di ReviewMe</h1>
+                <p>Temukan review jujur tentang produk skincare dan makeup favoritmu!</p>
+            </div>
+        </section>
+
+<!-- Contoh Review Terbaru -->
+<section class="latest-reviews">
+    <div class="container">
+        <h2>Review Terbaru</h2>
+        <button class="scroll-btn left-btn">&#10094;</button> <!-- Button kiri -->
+        <div class="review-items">
+            <!-- Skintific 5X Ceramide -->
+            <div class="review-item">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="https://th.bing.com/th/id/OIP.QYknIuTsl7sBF5amGJfdQgHaHa?rs=1&pid=ImgDetMain-large.jpg">
+                    <source media="(min-width: 768px)" srcset="https://khyrastore.com/wp-content/uploads/2022/03/SKINTIFIC-5X-Ceramide-Barrier-Repair-Moisturize-Gel-Moisturizer-30G.jpg">
+                    <img src="https://th.bing.com/th/id/OIP.QYknIuTsl7sBF5amGJfdQgHaHa?rs=1&pid=ImgDetMain-small.jpg" alt="Skintific 5X Ceramide Barrier Repair Moisture Gel">
+                </picture>
+                <h3>Skintific 5X Ceramide Barrier Repair Moisture Gel</h3>
+                <p>Moisturizer yang ringan dengan 5 jenis ceramide untuk memperkuat barrier kulit.</p>
+                <a href="reviews.html">Baca selengkapnya</a>
+            </div>
+            <!-- Npure Cica Clear Pad -->
+            <div class="review-item">
+                <img src="https://cdn.shopify.com/s/files/1/0550/8205/7898/products/8b26d077-0bc3-43aa-a7e1-b79a75a2a902_1024x.jpg?v=1623812485" alt="npure cica clear pad">
+                <h3>Npure Cica Clear Pad</h3>
+                <p>Pad toner dengan ekstrak cica untuk menenangkan dan membersihkan kulit.</p>
+                <a href="reviews.html">Baca selengkapnya</a>
+            </div>
+            <!-- Pixy Make It Glow Primer -->
+            <div class="review-item">
+                <img src="https://khyrastore.com/wp-content/uploads/2020/02/pixy-skin-primer.jpg" alt="Pixy Make It Glow Primer">
+                <h3>Pixy Make It Glow Primer</h3>
+                <p>Primer yang memberikan efek glowing alami dan menyiapkan kulit untuk makeup.</p>
+                <a href="reviews.html">Baca selengkapnya</a>
+            </div>
+            <!-- Luxcrime Lip Stain -->
+            <div class="review-item">
+                <img src="https://diary.marshabeauty.com/media/review_images/luxcrime_light_lip_stain.jpg" alt="Luxcrime Lip Stain">
+                <h3>Luxcrime Lip Stain</h3>
+                <p>Lip stain tahan lama dengan hasil matte yang tidak membuat bibir kering.</p>
+                <a href="reviews.html">Baca selengkapnya</a>
+            </div>
+            <!-- Erha Acne Spot -->
+            <div class="review-item">
+                <img src="https://i0.wp.com/muneni.com/wp-content/uploads/erha-acne-spot-gel-1.jpg?fit=680%2C680&ssl=1" alt="Erha Acne Spot">
+                <h3>Erha Acne Spot</h3>
+                <p>Perawatan titik untuk mengurangi dan menyembuhkan jerawat dengan cepat.</p>
+                <a href="reviews.html">Baca selengkapnya</a>
+            </div>
+            <!-- Pink Flash Eyeliner -->
+            <div class="review-item">
+                <img src="https://cdn1.productnation.co/stg/sites/4/62f9c83a96347.jpeg" alt="Pink Flash Eyeliner">
+                <h3>Pink Flash Eyeliner</h3>
+                <p>Eyeliner waterproof dengan aplikator tipis untuk hasil garis yang presisi.</p>
+                <a href="reviews.html">Baca selengkapnya</a>
+            </div>
+        <button class="scroll-btn right-btn">&#10095;</button> <!-- Button kanan -->
+    </div>
+</section>
+
+<section class="request-review">
+    <div class="container">
+        <h2>Minta Review Produk</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Alamat Email:</label>
+                <input type="email" id="email" name="email" placeholder="Alamat Email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" placeholder="Tanggal Lahir" required>
+            </div>
+            <div class="product-category">
+                <span>Pilih Kategori Produk:</span>
+                <div>
+                    <input type="radio" id="skincare" name="productCategory" value="skincare" required>
+                    <label for="skincare">Skincare</label>
+                </div>
+                <div>
+                    <input type="radio" id="makeup" name="productCategory" value="makeup" required>
+                    <label for="makeup">Makeup</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="product">Produk yang ingin direview:</label>
+                <input type="text" id="product" name="product" placeholder="Produk yang ingin direview" required>
+            </div>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ReviewMe. semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
